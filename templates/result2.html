@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction Result</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-pink-200 via-red-100 to-white flex flex-col items-center justify-center min-h-screen text-center">
+    
+    <div class="bg-white shadow-2xl rounded-2xl p-8 max-w-md border border-gray-200">
+        <h1 class="text-3xl font-extrabold text-gray-800 mb-4">Prediction Result</h1>
+        
+        {% if prediction_text %}
+            <p class="text-xl font-semibold text-gray-700">{{ prediction_text }}</p>
+        {% endif %}
+
+        <div class="mt-6 p-4 bg-gray-100 rounded-lg">
+            <p class="text-gray-600 text-lg">Probability of No Heart Disease: 
+                <span class="font-bold text-green-600">{{ prob_no }}%</span>
+            </p>
+            <p class="text-gray-600 text-lg">Probability of Heart Disease: 
+                <span class="font-bold {% if prob_yes > 50 %}text-red-600{% else %}text-yellow-600{% endif %}">{{ prob_yes }}%</span>
+            </p>
+        </div>
+
+        <a href="/predict2" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md transition duration-300 hover:bg-blue-700 hover:scale-105">
+            Go Back
+        </a>
+    </div>
+
+</body>
+</html>

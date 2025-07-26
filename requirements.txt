@@ -1,0 +1,7 @@
+Flask
+Flask-WTF
+numpy
+pandas
+scikit-learn
+pickle5
+gunicorn  # (If deploying on a cloud platform)

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Health - Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .heartbeat {
+            animation: heartbeat 1.5s infinite ease-in-out;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-xl shadow-xl border-b border-blue-500/30">
+        <div class="container mx-auto flex justify-between items-center px-6 py-4">
+            <h1 class="text-2xl font-extrabold tracking-wide relative text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600 neon-glow">
+                <span class="absolute -inset-1 bg-blue-500/30 blur-2xl opacity-50 rounded-xl"></span>
+                ⚡ Cardio-Kawaii 
+            </h1>
+        </div>
+    </header>
+    
+    <style>
+        /* Neon Glow Effect */
+        .neon-glow {
+            text-shadow: 0 0 5pxrgb(0, 81, 255), 0 0 10px #ff0066, 0 0 20px #ff0033;
+            animation: electricFlicker 1.5s infinite alternate;
+        }
+    
+        /* Electric Flicker Animation */
+        @keyframes electricFlicker {
+            0% { text-shadow: 0 0 3pxrgb(0, 47, 255), 0 0 7px #ff0033, 0 0 15px #ff0033; }
+            50% { text-shadow: 0 0 8pxrgb(0, 81, 255), 0 0 16px #ff0033, 0 0 30px #ff0033; }
+            100% { text-shadow: 0 0 4pxrgb(17, 0, 255), 0 0 9px #ff0033, 0 0 18px #ff0033; }
+        }
+    
+        /* Hover Effect: Electric Vibration */
+        .neon-glow:hover {
+            animation: vibrate 0.1s infinite;
+        }
+    
+        @keyframes vibrate {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-1px); }
+            50% { transform: translateX(1px); }
+            75% { transform: translateX(-1px); }
+            100% { transform: translateX(0); }
+        }
+    
+        /* Lightning Sparks */
+        .neon-glow::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -30px;
+            font-size: 1.5rem;
+            color: #ff0066;
+            animation: sparks 1.5s infinite alternate;
+        }
+    
+        @keyframes sparks {
+            0% { opacity: 0; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+            100% { opacity: 0; transform: scale(1); }
+        }
+    </style>
+    
+
+<!-- 🚀 Futuristic Heart Disease Awareness Hero Section -->
+<section class="relative w-full h-screen bg-gradient-to-br from-black via-red-900 to-black flex items-center justify-center text-center p-10 overflow-hidden">
+    <!-- 🔥 Neon Glow Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-red-800 via-transparent to-black opacity-30 mix-blend-soft-light"></div>
+
+    <!-- 💖 Floating Heart Particles -->
+    <div class="absolute w-14 h-14 bg-red-500 rounded-full opacity-50 blur-lg top-10 left-20 animate-heart-float"></div>
+    <div class="absolute w-10 h-10 bg-pink-400 rounded-full opacity-60 blur-md bottom-16 right-32 animate-heart-float-reverse"></div>
+    <div class="absolute w-8 h-8 bg-red-600 rounded-full opacity-40 blur-md top-1/2 left-1/4 animate-heart-fade"></div>
+
+    <!-- 🔴 Pulsing Heartbeat Ring -->
+    <div class="absolute w-64 h-64 border-4 border-red-500 rounded-full opacity-40 animate-pulse-ring"></div>
+
+    <!-- 🎇 Main Content -->
+    <div class="relative z-10 max-w-4xl animate-fade-in">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg tracking-wide">
+            Protect Your Heart 💔
+        </h1>
+        <p class="text-lg md:text-xl text-gray-200 mt-4 opacity-90">
+            Over **17.9 million** lives are lost annually to heart disease. Learn how to stay **heart-healthy**!
+        </p>
+
+        <!-- ✨ Glowing Divider -->
+        <div class="mt-6">
+            <div class="w-56 h-1 bg-red-400 rounded-full animate-glow mx-auto"></div>
+        </div>
+
+        <!-- 🚀 Interactive Heart Scanner Button -->
+        <a href="#fun-facts" class="mt-8 inline-block px-8 py-3 bg-gradient-to-r from-red-500 to-pink-500 text-white font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-2 border-red-300 hover:bg-red-700 hover:border-pink-500 animate-heartbeat">
+            Discover More 💖
+        </a>
+    </div>
+</section>
+
+<!-- 🎨 Smooth & Futuristic Animations -->
+<style>
+    /* 🩺 Floating Hearts Animation */
+    @keyframes heart-float {
+        0%, 100% { transform: translateY(0); opacity: 0.6; }
+        50% { transform: translateY(-25px); opacity: 1; }
+    }
+    .animate-heart-float { animation: heart-float 6s ease-in-out infinite; }
+    .animate-heart-float-reverse { animation: heart-float 6s ease-in-out infinite reverse; }
+
+    /* 💓 Pulsing Heartbeat Ring */
+    @keyframes pulse-ring {
+        0% { transform: scale(1); opacity: 0.4; }
+        50% { transform: scale(1.2); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 0.4; }
+    }
+    .animate-pulse-ring { animation: pulse-ring 3s infinite ease-in-out; }
+
+    /* ❤️ Heart Fade-In */
+    @keyframes heart-fade {
+        0% { opacity: 0; transform: scale(0.8); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+    .animate-heart-fade { animation: heart-fade 2s ease-in-out forwards; }
+
+    /* 🔥 Glowing Divider */
+    @keyframes glow {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+    }
+    .animate-glow { animation: glow 2s infinite alternate; }
+
+    /* 💖 Futuristic Button Heartbeat */
+    @keyframes heartbeat {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    .animate-heartbeat { animation: heartbeat 1.5s infinite ease-in-out; }
+
+    /* 🌀 Fade-in Effect */
+    @keyframes fade-in {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fade-in 1.5s ease-out forwards; }
+</style>
+
+
+<!-- Fun Facts Section -->
+<section id="fun-facts" class="py-16 px-6 text-center bg-black">
+    <h2 class="text-4xl font-bold text-red-500 fade-in">Fun Facts About Your Heart</h2>
+    <p class="text-lg text-gray-400 mt-2 fade-in">Did you know these amazing facts about your heart?</p>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 shadow-xl p-6 rounded-lg hover-scale fade-in">
+            <h3 class="text-2xl font-semibold text-red-500">💓 The Heart Beats Over 100,000 Times a Day</h3>
+            <p class="text-gray-300 mt-2">Your heart beats about 100,000 times every single day, pumping around 2,000 gallons of blood through your body!</p>
+            <img src="https://static.vecteezy.com/system/resources/previews/019/515/676/non_2x/cartoon-heart-character-doing-barbell-weight-training-vector.jpg" alt="Heart beats animation" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-gray-900 shadow-xl p-6 rounded-lg hover-scale fade-in">
+            <h3 class="text-2xl font-semibold text-red-500">💤 The Heart Doesn’t Rest</h3>
+            <p class="text-gray-300 mt-2">Even while you sleep, your heart continues to beat around 60-100 times per minute. It never takes a break!</p>
+            <img src="https://professional.heart.org/en/-/media/PHD-Images/Education/Getting-to-the-Heart-of-Sleep/Sleeping_man_artwork_heart_illustration_600x400.jpg?h=400&iar=0&mw=600&w=600&sc_lang=en" alt="Sleeping person with glowing heart" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-gray-900 shadow-xl p-6 rounded-lg hover-scale fade-in">
+            <h3 class="text-2xl font-semibold text-red-500">⚡ The Heart Generates Enough Energy to Drive a Truck</h3>
+            <p class="text-gray-300 mt-2">If the energy produced by your heart in one day could be harnessed, it could drive a truck for 20 miles!</p>
+            <img src="https://media.istockphoto.com/id/1460004008/vector/cartoon-healthy-heart-character-with-superhero-cape.jpg?s=612x612&w=0&k=20&c=ZISw_Am01-5vTuUYKwiltfEJfIha59YgURt5JYmvJJk=" alt="Cartoonish heart pulling a truck" class="w-full mt-4 rounded-lg">
+        </div> 
+        <div class="bg-gray-900 shadow-xl p-6 rounded-lg hover-scale fade-in">
+            <h3 class="text-2xl font-semibold text-red-500">👊 Your Heart Is About the Size of Your Fist</h3>
+            <p class="text-gray-300 mt-2">Your heart is roughly the size of your fist, yet it performs the incredible task of pumping blood to every organ in your body.</p>
+            <img src="https://media0.giphy.com/media/e9MYlwW0r2qMUSJwZQ/200.webp?cid=ecf05e47gn9h09wtgogot43d1ouqu14y0anyhievrphwvl9a&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Heart size illustration" class="w-full mt-4 rounded-lg">
+        </div>            
+        <div class="bg-gray-900 shadow-xl p-6 rounded-lg hover-scale fade-in">
+            <h3 class="text-2xl font-semibold text-red-500">💓 The Heart Can Keep Beating Even After Being Removed</h3>
+            <p class="text-gray-300 mt-2">The heart can keep beating outside the body as long as it has oxygen, which is why organ transplants are possible.</p>
+            <img src="https://www.cardiacsurgeryonline.com/wp-content/uploads/2020/02/heart-surgeries.jpg" alt="Heart with life support system" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-gray-900 shadow-xl p-6 rounded-lg hover-scale fade-in">
+            <h3 class="text-2xl font-semibold text-red-500">👩‍⚕️ Women’s Hearts Beat Faster Than Men’s</h3>
+            <p class="text-gray-300 mt-2">On average, women’s hearts beat faster than men’s, with a resting heart rate of about 78-82 beats per minute while men's being 64-75 beats.</p>
+            <img src="https://media2.giphy.com/media/SLAzfbDM8VvywFb80x/200.webp?cid=ecf05e47vj8in562yo0hpb088gok1rtif7br8fky86zi1n3g&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Heartbeat comparison" class="w-full mt-4 rounded-lg">
+        </div>
+        
+        <div class="bg-gray-900 shadow-xl p-6 rounded-lg hover-scale fade-in">
+            <h3 class="text-2xl font-semibold text-red-500">🌍 Your Heart Pumps Blood Through 60,000 Miles of Blood Vessels</h3>
+            <p class="text-gray-300 mt-2">If you were to line up all the blood vessels in your body, they would stretch around the earth 2.5 times.</p>
+            <img src="https://media2.giphy.com/media/LKTTAzGboJGzC/200.webp?cid=790b7611fuu0z8iubh59eyhzqulo2jzmc1ozx7gc9wt8vrcb&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Blood vessels around the earth" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-gray-900 shadow-xl p-6 rounded-lg hover-scale fade-in">
+            <h3 class="text-2xl font-semibold text-red-500">⚡ The Heart Has Its Own Electrical System</h3>
+            <p class="text-gray-300 mt-2">Your heart has its own built-in electrical system, enabling it to beat without needing input from the brain.</p>
+            <img src="https://st2.depositphotos.com/1000423/8586/i/450/depositphotos_85864136-stock-photo-bulb-with-heart.jpg" alt="Electrical circuit diagram through heart" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-gray-900 shadow-xl p-6 rounded-lg hover-scale fade-in">
+            <h3 class="text-2xl font-semibold text-red-500">😂 Laughing Is Good for Your Heart</h3>
+            <p class="text-gray-300 mt-2">Laughing for 10-15 minutes can help reduce stress and improve blood circulation, which is great for your heart!</p>
+            <img src="https://media2.giphy.com/media/ZqlvCTNHpqrio/200.webp?cid=790b7611ptb9dqegwek140zwo0e3mj6zskaiiiytdaj57uhv&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Smiling person with glowing heart" class="w-full mt-20 rounded-lg">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Navigation Links to Other Pages -->
+<!-- ❤️ Futuristic Heart Health Section -->
+<section class="relative py-20 px-6 text-center bg-gradient-to-br from-red-700 via-black to-black overflow-hidden">
+    <!-- Soft Glowing Particles -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="w-10 h-10 bg-red-400 opacity-20 blur-xl rounded-full absolute top-10 left-1/4 animate-glow-float"></div>
+        <div class="w-12 h-12 bg-red-600 opacity-30 blur-md rounded-full absolute bottom-16 right-1/3 animate-glow-float-reverse"></div>
+        <div class="w-8 h-8 bg-red-500 opacity-40 blur-md rounded-full absolute top-1/2 left-2/3 animate-glow-fade"></div>
+    </div>
+
+    <!-- Main Heading -->
+    <h2 class="text-5xl md:text-6xl font-extrabold text-red-400 drop-shadow-lg tracking-wide animate-fade-in">
+        ❤️ Explore More
+    </h2>
+    <p class="text-lg md:text-xl text-red-300 mt-4 opacity-90 animate-slide-up">
+        Learn more about heart health and our AI-powered prediction model.
+    </p>
+
+    <!-- Glowing Divider -->
+    <div class="mt-6">
+        <div class="w-48 h-1 bg-red-500 rounded-full animate-glow mx-auto"></div>
+    </div>
+
+    <!-- Interactive Cards -->
+    <div class="mt-12 grid md:grid-cols-3 gap-10">
+        <a href="/diseases" class="block bg-black shadow-2xl p-8 rounded-xl transition-transform transform hover:scale-105 hover:rotate-1 neon-border animate-card-fade">
+            <h3 class="text-2xl font-semibold text-red-500">🩺 Heart Diseases</h3>
+            <p class="text-gray-300 mt-2">Discover various heart diseases, their causes, and prevention tips.</p>
+        </a>
+        <a href="/model_info" class="block bg-black shadow-2xl p-8 rounded-xl transition-transform transform hover:scale-105 hover:-rotate-1 neon-border animate-card-fade">
+            <h3 class="text-2xl font-semibold text-red-500">💡 Model Info</h3>
+            <p class="text-gray-300 mt-2">Understand how our AI model predicts heart disease risks.</p>
+        </a>
+        <a href="/predict" class="block bg-black shadow-2xl p-8 rounded-xl transition-transform transform hover:scale-105 hover:rotate-1 neon-border animate-card-fade">
+            <h3 class="text-2xl font-semibold text-red-500">📊 Predict Risk</h3>
+            <p class="text-gray-300 mt-2">Enter your health data and check your heart disease risk.</p>
+        </a>
+    </div>
+</section>
+
+<!-- 🌟 Custom Animations & Effects -->
+<style>
+    /* Floating Glow Effects */
+    @keyframes glow-float {
+        0%, 100% { transform: translateY(0); opacity: 0.7; }
+        50% { transform: translateY(-15px); opacity: 1; }
+    }
+    .animate-glow-float {
+        animation: glow-float 6s infinite ease-in-out;
+    }
+    .animate-glow-float-reverse {
+        animation: glow-float 6s infinite ease-in-out reverse;
+    }
+
+    /* Soft Fade Animation */
+    @keyframes glow-fade {
+        from { opacity: 0; transform: scale(0.8); }
+        to { opacity: 1; transform: scale(1); }
+    }
+    .animate-glow-fade {
+        animation: glow-fade 2s ease-in-out forwards;
+    }
+
+    /* Fade-in for Text */
+    @keyframes fade-in {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+        animation: fade-in 1.5s ease-out forwards;
+    }
+
+    /* Slide-Up Animation */
+    @keyframes slide-up {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-slide-up {
+        animation: slide-up 1.8s ease-out forwards;
+    }
+
+    /* Card Fade-in */
+    @keyframes card-fade {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+    }
+    .animate-card-fade {
+        animation: card-fade 2s ease-in-out forwards;
+    }
+
+    /* Glowing Divider */
+    @keyframes glow {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+    }
+    .animate-glow {
+        animation: glow 2s infinite alternate;
+    }
+
+    /* Neon Border for Cards */
+    .neon-border {
+        border: 2px solid transparent;
+        box-shadow: 0 0 10px rgba(255, 0, 102, 0.5);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .neon-border:hover {
+        box-shadow: 0 0 20px rgba(255, 0, 102, 0.9);
+    }
+</style>
+
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-red-900 via-black to-red-900 text-white text-center py-6 ">
+        <p class="text-lg">&copy; 2025 Heart Health | Designed with ❤️</p>
+    </footer>
+    
+    <script>
+        // ScrollReveal animations
+        document.addEventListener("DOMContentLoaded", function() {
+            ScrollReveal().reveal('.fade-in', { distance: '50px', duration: 1000, easing: 'ease-out', origin: 'bottom', interval: 200 });
+        });
+
+        // Reveal sections on scroll
+        function reveal() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((el) => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+        window.addEventListener('scroll', reveal);
+        reveal();
+    </script>
+</body>
+</html>
