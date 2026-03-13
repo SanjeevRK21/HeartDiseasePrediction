@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Health - Heart Diseases</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-xl shadow-xl border-b border-blue-500/30">
+        <div class="container mx-auto flex justify-between items-center px-6 py-4">
+            <h1 class="text-2xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">
+                ⚡ Cardio-Kawaii
+            </h1>
+        </div>
+    </header>
+
+<!-- Futuristic Heart Disease Awareness Hero Section -->
+<section class="relative w-full h-screen bg-gradient-to-b from-red-500 via-pink-400 to-red-300 flex items-center justify-center text-center p-10 overflow-hidden">
+    
+    <!-- Dark Overlay for Depth -->
+    <div class="absolute inset-0 bg-black opacity-30 backdrop-blur-md"></div>
+
+    <!-- Animated EKG Wave -->
+    <div class="absolute bottom-12 left-0 w-full h-16 overflow-hidden">
+        <div class="animate-ekg bg-red-400 h-1 w-full opacity-60"></div>
+    </div>
+
+    <!-- Floating Medical Icons -->
+    <div class="absolute top-16 left-10 w-12 h-12 bg-red-500 rounded-full opacity-70 blur-lg animate-heart-float"></div>
+    <div class="absolute top-24 right-20 w-10 h-10 bg-white rounded-full opacity-50 blur-md animate-icon-float"></div>
+    <div class="absolute bottom-20 left-16 w-8 h-8 bg-pink-400 rounded-full opacity-50 blur-lg animate-icon-float-reverse"></div>
+
+    <!-- Pulsing Heartbeat Animation -->
+    <div class="absolute w-60 h-60 border-4 border-pink-500 rounded-full opacity-40 animate-heartbeat"></div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 max-w-3xl animate-fade-in">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg tracking-wide">
+            Understanding Heart Diseases 💔
+        </h1>
+        <p class="text-lg md:text-xl text-white mt-4 opacity-90">
+            Learn about different types of heart diseases and their impact.
+        </p>
+
+        <!-- Glowing Divider -->
+        <div class="mt-6">
+            <div class="w-48 h-1 bg-white rounded-full animate-glow mx-auto"></div>
+        </div>
+
+        <!-- Explore Button -->
+        <a href="#risk" class="mt-8 inline-block px-8 py-3 bg-gradient-to-r from-white to-red-100 text-red-600 font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-2 border-white hover:bg-red-500 hover:text-white hover:border-pink-300 animate-hologram">
+            Explore More 🔎
+        </a>
+    </div>
+</section>
+
+<!-- Smooth & Futuristic Animations -->
+<style>
+    /* Floating Icons Animation */
+    @keyframes icon-float {
+        0%, 100% { transform: translateY(0); opacity: 0.7; }
+        50% { transform: translateY(-15px); opacity: 1; }
+    }
+    .animate-icon-float {
+        animation: icon-float 5s ease-in-out infinite;
+    }
+    .animate-icon-float-reverse {
+        animation: icon-float 5s ease-in-out infinite reverse;
+    }
+
+    /* Pulsing Heartbeat Effect */
+    @keyframes heartbeat {
+        0%, 100% { transform: scale(1); opacity: 0.5; }
+        50% { transform: scale(1.2); opacity: 0.8; }
+    }
+    .animate-heartbeat {
+        animation: heartbeat 2s infinite ease-in-out;
+    }
+
+    /* EKG (Heart Rate) Wave Animation */
+    @keyframes ekg {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+    }
+    .animate-ekg {
+        animation: ekg 3s linear infinite;
+    }
+
+    /* Glowing Divider */
+    @keyframes glow {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+    }
+    .animate-glow {
+        animation: glow 2s infinite alternate;
+    }
+
+    /* Hologram Button Effect */
+    @keyframes hologram {
+        0%, 100% { box-shadow: 0 0 10px white; }
+        50% { box-shadow: 0 0 20px pink; }
+    }
+    .animate-hologram {
+        animation: hologram 2s infinite alternate;
+    }
+
+    /* Fade-in Animation */
+    @keyframes fade-in {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+        animation: fade-in 1.5s ease-out forwards;
+    }
+</style>
+
+
+    <!-- Types of Heart Diseases -->
+    <section id="risk" class="py-16 px-6 text-center bg-gray-100 bg-gradient-to-b from-red-200 via-pink-400 to-yellow-100">
+        <h2 class="text-4xl font-bold text-red-500 fade-in">Heart Diseases & Their Risk of Heart Attack</h2>
+        <p class="text-lg text-gray-600 mt-2 fade-in">Here’s a breakdown of heart diseases and how likely they are to cause a heart attack.</p>
+
+        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+                <h3 class="text-2xl font-semibold text-pink-500">❤️ Coronary Artery Disease (CAD)</h3>
+                <p class="text-gray-700 mt-2">Blocked or narrowed arteries reduce blood flow to the heart.<br><strong>Risk: 80-90%</strong></p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+                <h3 class="text-2xl font-semibold text-pink-500">🩸 Hypertension (High Blood Pressure)</h3>
+                <p class="text-gray-700 mt-2">Increases strain on heart arteries, leading to plaque buildup and rupture.<br><strong>Risk: 50-70%</strong></p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+                <h3 class="text-2xl font-semibold text-pink-500">💔 Atherosclerosis</h3>
+                <p class="text-gray-700 mt-2">Hardening & narrowing of arteries due to cholesterol buildup.<br><strong>Risk: 50-75%</strong></p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+                <h3 class="text-2xl font-semibold text-pink-500">⚡ Arrhythmias (Irregular Heartbeats)</h3>
+                <p class="text-gray-700 mt-2">Unstable heart rhythms can lead to cardiac arrest & heart attack.<br><strong>Risk: 20-40%</strong></p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+                <h3 class="text-2xl font-semibold text-pink-500">🫀 Cardiomyopathy</h3>
+                <p class="text-gray-700 mt-2">Heart muscle disease weakens the heart’s ability to pump blood.<br><strong>Risk: 20-35%</strong></p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+                <h3 class="text-2xl font-semibold text-pink-500">🛑 Heart Valve Disease</h3>
+                <p class="text-gray-700 mt-2">	Faulty heart valves disrupt normal blood flow, causing strain.<br><strong>Risk: 10-25%</strong></p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+                <h3 class="text-2xl font-semibold text-pink-500">📊 Congenital Heart Disease</h3>
+                <p class="text-gray-700 mt-2">	Birth defects affecting heart structure can increase attack risk.<br><strong>Risk: 10-20%</strong></p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+                <h3 class="text-2xl font-semibold text-pink-500">⛵ Diabetes-Related Heart Disease</h3>
+                <p class="text-gray-700 mt-2">	High blood sugar damages arteries, increasing heart attack chances.<br><strong>Risk: 30-50%</strong></p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+                <h3 class="text-2xl font-semibold text-pink-500">😢 Obesity-Related Heart Disease</h3>
+                <p class="text-gray-700 mt-2">	Excess fat leads to high cholesterol & blood pressure issues.<br><strong>Risk: 30-50%</strong></p>
+            </div>
+        </div>
+    </section>
+
+<!-- Prevention & Care Section -->
+<section class="py-16 px-6 text-center bg-gray-100 bg-gradient-to-b from-yellow-100 via-red-200 to-pink-200">
+    <h2 class="text-4xl font-bold text-red-500 fade-in">How to Keep Your Heart Healthy ❤️</h2>
+    <p class="text-lg text-gray-600 mt-2 fade-in">Follow these simple steps to maintain a healthy heart.</p>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-xl p-2 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+            <h3 class="text-2xl font-semibold text-pink-500">🥗 Eat Healthy</h3>
+            <p class="text-gray-700 mt-2">Include fruits, veggies, whole grains, and lean proteins in your diet.</p>
+            <img src="https://media4.giphy.com/media/Pqr5ddlDQqI8g/200.webp?cid=ecf05e47ggu6csyanpq79m3ep8bdmhb8jdb4bx0lctsmy1cr&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Heart beats animation" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-white shadow-xl p-1 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+            <h3 class="text-2xl font-semibold text-pink-500">🏃 Stay Active</h3>
+            <p class="text-gray-700 mt-2">Exercise at least 30 minutes a day to keep your heart strong.</p>
+            <img src="https://media0.giphy.com/media/NPXH9DAWLf5hm/200.webp?cid=ecf05e47modgoqo2qk69fnbnujylnymmq9ciai5mjspy0zbc&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Heart beats animation" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+            <h3 class="text-2xl font-semibold text-pink-500">⚖️ Maintain a Healthy Weight</h3>
+            <p class="text-gray-700 mt-2">Control your weight to reduce stress on your heart.</p>
+            <img src="https://media3.giphy.com/media/1d5KqMvnRj8gXy0Mm6/giphy.webp?cid=ecf05e47ezz82jpj0igh38zf1eifpqk066on8ekmtfskzosv&ep=v1_gifs_search&rid=giphy.webp&ct=g" alt="Heart beats animation" class="w-45 max-w-xs mt-4 rounded-lg mx-auto">
+        </div>
+        <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+            <h3 class="text-2xl font-semibold text-pink-500">🩺 Check Blood Pressure</h3>
+            <p class="text-gray-700 mt-2">Monitor blood pressure and cholesterol regularly.</p>
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29oMjU5d3U3bmV3bTNqNHlmODhxZ2dpcW16Z3E2MTNwbTFmazl2byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3kkFAAxBKsE1Wkrwvx/200.webp" alt="Heart beats animation" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+            <h3 class="text-2xl font-semibold text-pink-500">🧘 Manage Stress</h3>
+            <p class="text-gray-700 mt-2">Practice meditation and deep breathing to reduce stress.</p>
+            <img src="https://media1.giphy.com/media/eemPC4yhITcTm/200.webp?cid=790b7611fkea8hln3cbqbdbuy8c7qhjboh9jscf578xh0jwq&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Heart beats animation" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+            <h3 class="text-2xl font-semibold text-pink-500">🚭 Avoid Smoking</h3>
+            <p class="text-gray-700 mt-2">Quit smoking to improve heart and lung health.</p>
+            <img src="https://media0.giphy.com/media/lvUUzGUU2w7yeCxQ60/200.webp?cid=790b7611t7gxooeg8mb26w1y2r0v4eqdgesh6a9q68rwik5u&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Heart beats animation" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+            <h3 class="text-2xl font-semibold text-pink-500">💧 Stay Hydrated</h3>
+            <p class="text-gray-700 mt-2">Drink plenty of water to maintain circulation.</p>
+            <img src="https://media3.giphy.com/media/xThuWpnG8UOeTmFVmg/giphy.webp?cid=790b76113fxrtb0nlhk43keftn7ao9sbvbef0ab7ehlux1f4&ep=v1_gifs_search&rid=giphy.webp&ct=g" alt="Heart beats animation" class="w-45 max-w-xs mt-4 rounded-lg mx-auto">
+        </div>
+        <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+            <h3 class="text-2xl font-semibold text-pink-500">😴 Get Enough Sleep</h3>
+            <p class="text-gray-700 mt-2">Aim for 7-9 hours of sleep to reduce heart disease risk.</p>
+            <img src="https://media0.giphy.com/media/ZLxRWG0vhzpiE/giphy.webp?cid=790b76118frn9aparuyxfwo4o83uiw1s9c0bxc487zxa7svc&ep=v1_gifs_search&rid=giphy.webp&ct=g" alt="Heart beats animation" class="w-full mt-4 rounded-lg">
+        </div>
+        <div class="bg-white shadow-xl p-6 rounded-lg transform transition duration-500 hover:scale-105 fade-in">
+            <h3 class="text-2xl font-semibold text-pink-500">😄 Stay Happy</h3>
+            <p class="text-gray-700 mt-2">Laughter and social connections help keep your heart strong.</p>
+            <img src="https://media3.giphy.com/media/L0qTl8hl84EDly62J1/200.webp?cid=790b7611nt2ypwdt3ij6rczdofwjy7b6gwubhzz915hprgw5&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Heart beats animation" class="w-full mt-4 rounded-lg">
+        </div>
+    </div>
+</section>
+
+
+<!-- ❤️ Futuristic Heart-Themed Section with Light Pink to Light Yellow Gradient -->
+<section class="relative py-20 px-6 text-center bg-gradient-to-br from-pink-200 via-pink-100 to-yellow-100 overflow-hidden">
+    <!-- Soft Glowing Particles -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="w-10 h-10 bg-white opacity-20 blur-lg rounded-full absolute top-10 left-1/4 animate-glow-float"></div>
+        <div class="w-12 h-12 bg-pink-300 opacity-30 blur-md rounded-full absolute bottom-16 right-1/3 animate-glow-float-reverse"></div>
+        <div class="w-8 h-8 bg-yellow-200 opacity-40 blur-md rounded-full absolute top-1/2 left-2/3 animate-glow-fade"></div>
+    </div>
+
+    <!-- Main Heading -->
+    <h2 class="text-5xl md:text-6xl font-extrabold text-pink-600 drop-shadow-lg tracking-wide animate-fade-in">
+        ❤️ Explore More
+    </h2>
+    <p class="text-lg md:text-xl text-pink-700 mt-4 opacity-90 animate-slide-up">
+        Explore more about heart health and our AI-powered prediction model.
+    </p>
+
+    <!-- Glowing Divider -->
+    <div class="mt-6">
+        <div class="w-48 h-1 bg-pink-500 rounded-full animate-glow mx-auto"></div>
+    </div>
+
+<!-- Interactive Cards -->
+<div class="mt-12 grid md:grid-cols-3 gap-10">
+    <a href="/" class="block bg-white shadow-xl p-8 rounded-xl transition-transform transform hover:scale-105 hover:rotate-1 hover:bg-pink-200 hover:text-black neon-border animate-card-fade duration-300">
+        <h3 class="text-2xl font-semibold text-pink-500">🏠 Homepage</h3>
+        <p class="text-gray-700 mt-2">Go back to the homepage and explore fun facts.</p>
+    </a>
+    <a href="/model_info" class="block bg-white shadow-xl p-8 rounded-xl transition-transform transform hover:scale-105 hover:-rotate-1 hover:bg-pink-200 hover:text-black neon-border animate-card-fade duration-300">
+        <h3 class="text-2xl font-semibold text-pink-500">💡 Model Info</h3>
+        <p class="text-gray-700 mt-2">Learn how our AI model predicts heart diseases.</p>
+    </a>
+    <a href="/predict" class="block bg-white shadow-xl p-8 rounded-xl transition-transform transform hover:scale-105 hover:rotate-1 hover:bg-pink-200 hover:text-black neon-border animate-card-fade duration-300">
+        <h3 class="text-2xl font-semibold text-pink-500">📊 Predict Risk</h3>
+        <p class="text-gray-700 mt-2">Enter your health data to check your heart disease risk.</p>
+    </a>
+</div>
+</section>
+
+
+<!-- 🌟 Custom Animations & Effects -->
+<style>
+    /* Floating Glow Effects */
+    @keyframes glow-float {
+        0%, 100% { transform: translateY(0); opacity: 0.7; }
+        50% { transform: translateY(-15px); opacity: 1; }
+    }
+    .animate-glow-float {
+        animation: glow-float 6s infinite ease-in-out;
+    }
+    .animate-glow-float-reverse {
+        animation: glow-float 6s infinite ease-in-out reverse;
+    }
+
+    /* Soft Fade Animation */
+    @keyframes glow-fade {
+        from { opacity: 0; transform: scale(0.8); }
+        to { opacity: 1; transform: scale(1); }
+    }
+    .animate-glow-fade {
+        animation: glow-fade 2s ease-in-out forwards;
+    }
+
+    /* Fade-in for Text */
+    @keyframes fade-in {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+        animation: fade-in 1.5s ease-out forwards;
+    }
+
+    /* Slide-Up Animation */
+    @keyframes slide-up {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-slide-up {
+        animation: slide-up 1.8s ease-out forwards;
+    }
+
+    /* Card Fade-in */
+    @keyframes card-fade {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+    }
+    .animate-card-fade {
+        animation: card-fade 2s ease-in-out forwards;
+    }
+
+    /* Glowing Divider */
+    @keyframes glow {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+    }
+    .animate-glow {
+        animation: glow 2s infinite alternate;
+    }
+
+    /* Neon Border for Cards */
+    .neon-border {
+        border: 2px solid transparent;
+        box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .neon-border:hover {
+        box-shadow: 0 0 20px rgba(255, 182, 193, 0.9);
+    }
+</style>
+
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-pink-200 via-pink-300 to-yellow-200 text-gray-800 text-center py-6 fade-in">
+        <p class="text-lg">&copy; 2025 Heart Health | Designed with ❤️</p>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const fadeElements = document.querySelectorAll(".fade-in");
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
