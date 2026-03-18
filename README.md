@@ -15,14 +15,14 @@ Users can:
   
 ## Features
 ### Interactive Homepage
-= Futuristic UI with animations and heart-health awareness
-= Displays fun facts and global statistics
+- Futuristic UI with animations and heart-health awareness
+- Displays fun facts and global statistics  
 👉 Implemented in:  [`index.html`](./index.html)
 
 ### Heart Disease Awareness Module
 - Explains different heart diseases
 - Shows risk levels (10% – 90%)
-- Includes prevention tips (diet, exercise, sleep, etc.)
+- Includes prevention tips (diet, exercise, sleep, etc.)  
 👉 Implemented in: [`diseases.html`](./diseases.html)
 
 ### AI Model Explanation Page
@@ -35,32 +35,32 @@ Users can:
   - Accuracy: 92%
   - Confusion Matrix
   - ROC Curve (~0.96 AUC)
-  - Precision-Recall insights
+  - Precision-Recall insights  
 👉 Implemented in: [`model.html`](./model.html)
 
 ### Prediction Interface
 - Advanced UI Form
   - Modern animated AI-themed interface
-  - Collects 11 clinical features (age, cholesterol, ECG, etc.)
+  - Collects 11 clinical features (age, cholesterol, ECG, etc.)  
 👉 Implemented in: [`predict.html`](./predict.html)
 
 - Simple Form (Fallback)
-  - Minimal UI version for reliability
+  - Minimal UI version for reliability  
 👉 Implemented in: [`predict2.html`](./predict2.html)
 
 ### Prediction Results Dashboard
 - Displays:
   - Risk classification (High / Low)
   - Probability scores
-- Dynamic UI feedback (color-coded health status)
-- Includes fallback to Colab notebook
+- Dynamic UI feedback (color-coded health status)  
+- Includes fallback to Colab notebook  
 👉 Implemented in: [`result.html`](./result.html)
 
 ## Backend Architecture
 ### Flask Server
 - Handles routing
 - prediction
-- template rendering.
+- template rendering    
 👉 Implemented in: [`index.py`](./index.py)
 
 ## Key Routes
