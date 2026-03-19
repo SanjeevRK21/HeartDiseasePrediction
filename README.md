@@ -108,7 +108,7 @@ User Input → Flask Backend → ML Model → Prediction → Probability → UI 
 
 ## Installation
 ```
-git clone https://github.com/your-username/cardio-kawaii.git
+git clone https://github.com/SanjeevRK21/HeartDiseasePrediction.git
 cd cardio-kawaii
 
 pip install flask numpy scikit-learn
